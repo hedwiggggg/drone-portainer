@@ -12,7 +12,7 @@ const endpoint          = process.env.PLUGIN_ENDPOINT;
 const composeEnvStr     = process.env.PLUGIN_COMPOSE_ENVIRONMENT;
 let   dockerComposeFile = process.env.PLUGIN_COMPOSE_FILE;
 const standalone        = process.env.PLUGIN_STANDALONE;
-const pullImage         = process.env.PLUGIN_PULL_IMAGE;
+const pullImage         = process.env.PLUGIN_PULL_IMAGE ?? false;
 
 let additionalComposeEnv: { [key: string]: string } = {};
 
